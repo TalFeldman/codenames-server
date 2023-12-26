@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://server-c58z.onrender.com",
+        origin: "https://codenames-31rxk1sr8-talfeldmans-projects.vercel.app",
         methods: ["GET", "POST"],
     }
 })
