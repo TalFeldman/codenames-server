@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://codenames-app-delta.vercel.app/",
+        origin: "https://server-c58z.onrender.com",
         methods: ["GET", "POST"],
     }
 })
@@ -323,10 +323,10 @@ io.on("connection", (socket) => {
     })
 })
 
-server.listen(process.env.PORT || 3001, () => {
+// server.listen("https://server-c58z.onrender.com", () => {
 
     
-    console.log("Server is running on port 3001");
-});
+//     console.log(`Server is running on https://server-c58z.onrender.com`);
+// });
 
 
