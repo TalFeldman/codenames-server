@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://codenames-31rxk1sr8-talfeldmans-projects.vercel.app",
+        origin: "http://localhost:3000",
         methods: ["GET", "POST"],
     }
 })
@@ -323,10 +323,10 @@ io.on("connection", (socket) => {
     })
 })
 
-// server.listen("https://server-c58z.onrender.com", () => {
+// server.listen(process.env.PORT || 3001, () => {
 
     
-//     console.log(`Server is running on https://server-c58z.onrender.com`);
+//     console.log("Server is running on port 3001");
 // });
 
 
